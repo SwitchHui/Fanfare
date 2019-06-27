@@ -1,0 +1,35 @@
+Debug info:
+Anki 2.1.12 (eef86bf3) Python 3.6.7 Qt 5.12.1 PyQt 5.11.3
+Platform: Mac 10.14.5
+Flags: frz=True ao=True sv=1
+Add-ons possibly involved: Anki Fanfare GamificationFeedback, review_heatmap
+
+Caught exception:
+  File "aqt/webview.py", line 27, in cmd
+  File "aqt/webview.py", line 85, in _onCmd
+  File "aqt/webview.py", line 363, in _onBridgeCmd
+  File "<decorator-gen-106>", line 2, in _linkHandler
+  File "anki/hooks.py", line 74, in decorator_wrapper
+  File "anki/hooks.py", line 71, in repl
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/review_heatmap/links.py", line 74, in heatmapLinkHandler
+    return None if not _old else _old(self, url)
+  File "aqt/overview.py", line 37, in _linkHandler
+  File "<decorator-gen-24>", line 2, in moveToState
+  File "anki/hooks.py", line 74, in decorator_wrapper
+  File "anki/hooks.py", line 65, in repl
+  File "aqt/main.py", line 485, in moveToState
+  File "anki/hooks.py", line 29, in runHook
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/2073603704/fanfare.py", line 85, in onBeforeStateChange
+    self.duration=self.fb.startDeck()
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/2073603704/feedback.py", line 74, in startDeck
+    dur=self._play(self.startFx,dmin)
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/2073603704/feedback.py", line 84, in _play
+    dur=self.ch_audio.play(au)
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/2073603704/audFeedback.py", line 29, in play
+    return fx.getDuration()
+  File "/Users/xujiayan/Library/Application Support/Anki2/addons21/2073603704/sound.py", line 31, in getDuration
+    w=wave.open(self.getName(),'r')
+  File "wave.py", line 499, in open
+  File "wave.py", line 163, in __init__
+  File "wave.py", line 130, in initfp
+<class 'wave.Error'>: file does not start with RIFF id
